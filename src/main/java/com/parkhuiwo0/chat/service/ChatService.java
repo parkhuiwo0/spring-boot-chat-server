@@ -33,17 +33,17 @@ public class ChatService {
         return chatRooms.get(roomId);
     }
 
-    public ChatRoom createRoom(String name) {
-        String id = UUID.randomUUID().toString();
-        ChatRoom chatRoom = ChatRoom.builder()
-                .roomId(id)
-                .name(name)
-                .build();
-
-        chatRooms.put(id, chatRoom);
-
-        return chatRoom;
-    }
+//    public ChatRoom createRoom(String name) {
+//        String id = UUID.randomUUID().toString();
+//        ChatRoom chatRoom = ChatRoom.builder()
+//                .roomId(id)
+//                .name(name)
+//                .build();
+//
+//        chatRooms.put(id, chatRoom);
+//
+//        return chatRoom;
+//    }
 
     public <T> void sendMessage(WebSocketSession session, T message) {
         try {
