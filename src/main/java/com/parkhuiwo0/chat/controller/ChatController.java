@@ -1,6 +1,6 @@
 package com.parkhuiwo0.chat.controller;
 
-import com.parkhuiwo0.chat.ChatService;
+import com.parkhuiwo0.chat.service.ChatService;
 import com.parkhuiwo0.chat.domain.ChatRoom;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;

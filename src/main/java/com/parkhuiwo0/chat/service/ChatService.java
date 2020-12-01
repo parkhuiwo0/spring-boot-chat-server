@@ -1,4 +1,4 @@
-package com.parkhuiwo0.chat;
+package com.parkhuiwo0.chat.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.parkhuiwo0.chat.domain.ChatRoom;
