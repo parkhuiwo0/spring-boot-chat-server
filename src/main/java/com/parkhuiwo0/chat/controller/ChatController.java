@@ -44,7 +44,7 @@ public class ChatController {
             message.setMessage(message.getSender() + "님이 입장하셨습니다.");
         }
 //        messagingTemplate.convertAndSend("/sub/chat/room/" + message.getRoomId(), message);
-        redisPublisher.publish(chatRoomRepository.getTopic(message.getRoomId(), message));
+        redisPublisher.publish(chatRoomRepository.getTopic(message.getRoomId()), message);
     }
 }
 
