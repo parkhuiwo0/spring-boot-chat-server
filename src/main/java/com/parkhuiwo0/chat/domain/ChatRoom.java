@@ -1,16 +1,14 @@
 package com.parkhuiwo0.chat.domain;
 
-import com.parkhuiwo0.chat.service.ChatService;
-import lombok.Builder;
 import lombok.Getter;
-import org.springframework.web.socket.WebSocketSession;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.io.Serializable;
 import java.util.UUID;
 
 @Getter
-public class ChatRoom {
+public class ChatRoom implements Serializable {
+
+    private static final long serialVersionUID = -3131613123536187212L;
     private String roomId;
     private String name;
 //    private Set<WebSocketSession> sessions = new HashSet<>(); // pub/sub의 경우 구독자 관리가 알아서 되기 때문에
